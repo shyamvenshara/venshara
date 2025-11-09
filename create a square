@@ -1,1 +1,24 @@
 
+﻿using System;
+using NXOpen;
+
+public class NXJournal
+{
+public static void Main(string[] args)
+{
+Session theSession = Session.GetSession();
+UI theUI = UI.GetUI();
+
+//Insert code here
+ Part workPart = theSession.Parts.Work;
+        Point3d p1 = new Point3d(0, 0, 0);
+        Point3d p2 = new Point3d(0, 100, 0);
+        Line line1 = workPart.Curves.CreateLine(p1, p2);
+//Insert code here
+ Part workPart = theSession.Parts.Work;
+        Point3d p1 = new Point3d(50, -100, 0);
+        Point3d p2 = new Point3d(50, 100, 0);
+        Line line1 = workPart.Curves.CreateLine(p1, p2);
+
+}
+}
