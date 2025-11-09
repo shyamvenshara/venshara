@@ -16,8 +16,8 @@ UI theUI = UI.GetUI();
         Line line1 = workPart.Curves.CreateLine(p1, p2);
 //Insert code here
  Part workPart = theSession.Parts.Work;
-        Point3d p1 = new Point3d(50, -100, 0);
-        Point3d p2 = new Point3d(50, 100, 0);
+        Point3d p1 = new Point3d(100, 100, 0);
+        Point3d p2 = new Point3d(0, 100, 0);
         Line line1 = workPart.Curves.CreateLine(p1, p2);
 
 }
